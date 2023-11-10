@@ -1,0 +1,15 @@
+.brand{
+    background: #F4F7FD;
+    height: 186px;
+    padding: 69px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 55px;
+    margin-bottom: var(--section-spacing);
+    @media screen and (max-width: 1023.98px) {
+        gap: 0 10px;
+        padding: 20px;
+    }
+    
+}

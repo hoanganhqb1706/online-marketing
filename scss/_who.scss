@@ -1,0 +1,39 @@
+.who{
+    padding-bottom: var(--section-spacing);
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-img{
+        width: 100%;
+        max-width: 600px;
+    }
+    &-content{
+        flex: 1;
+    }
+    .g-caption{
+        margin-bottom: 25px;
+    }
+    .g-heading{
+        margin-bottom: 25px;
+        max-width: 422px;
+    }
+    .g-text{
+        margin-bottom: 37px;
+    }
+    @media screen and (max-width: 1023.98px) {
+        &-container{
+            gap: 30px;
+            flex-direction: column;
+        }
+        &-img{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+}
