@@ -244,7 +244,7 @@ body {
 }
 @media screen and (max-width: 1023.98px) {
   .auth {
-    margin-left: 40px;
+    margin-left: auto;
   }
   .menu {
     margin: 0 auto;
@@ -252,7 +252,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 85%;
+    width: 70%;
     flex-direction: column;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -573,6 +573,7 @@ body {
   .review-list {
     max-width: 100%;
     grid-template-columns: 1fr;
+    padding: 0;
   }
   .review-bg {
     display: none;
@@ -746,22 +747,20 @@ body {
   max-width: 1440px;
   background-color: #052347;
   margin: 0 auto;
-  padding: 90px 141px 32px 170px;
+  padding: 90px 140px 30px 170px;
 }
 .footer-main {
   width: 100%;
   max-width: 1130px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0 213px;
-  margin-bottom: 50px;
+  gap: 0 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #11317C;
 }
 .footer-social {
   max-width: 235px;
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
 .footer-logo {
   margin-bottom: 22px;
@@ -778,10 +777,13 @@ body {
   gap: 0 12px;
 }
 .footer-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 0 73px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
+}
+.footer-item {
+  align-items: center;
 }
 .footer-title {
   color: #D9E1F0;
@@ -802,5 +804,41 @@ body {
   font-size: 14px;
   font-weight: 400;
   padding-top: 30px;
-  border-top: 1px solid #11317C;
+}
+
+@media screen and (max-width: 1279.98px) {
+  .footer {
+    padding: 80px;
+  }
+  .footer-main {
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .footer {
+    padding: 80px;
+  }
+  .footer-main {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer {
+    flex-direction: column;
+    padding: 32px 24px;
+  }
+  .footer-main {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-desc {
+    margin-bottom: 16px;
+  }
+  .footer-info {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
